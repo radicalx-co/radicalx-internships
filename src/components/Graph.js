@@ -3,11 +3,10 @@ import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import Button from "./Button";
+import CalendarIcon from "../assets/calendar-2.png";
 const Graph = () => {
   // Graph data
   const data = [
@@ -21,27 +20,58 @@ const Graph = () => {
     { name: "", value: "" },
   ];
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <AreaChart data={data}>
-        <Area type="monotone" dataKey="value" fill="#665FEF33" stroke="none" />
-        <XAxis
-          xAxisId={0}
-          interval={0}
-          tick={{ fontSize: 21, fontWeight: 500 }}
-          dataKey="value"
-          axisLine={false}
-          tickLine={false}
-        />
-        <XAxis
-          xAxisId={1}
-          interval={0}
-          tick={{ fontSize: 12, fontWeight: 500 }}
-          dataKey="name"
-          axisLine={false}
-          tickLine={false}
-        />
-      </AreaChart>
-    </ResponsiveContainer>
+    <div style={{ flexDirection: "column", display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          backgroundColor: "#F2F2F2",
+          padding: ".5em",
+          borderRadius: ".5em",
+          margin: "0 .5em",
+        }}
+      >
+        <Button bgColor={"#793EF5"} textColor="white">
+          This week
+        </Button>
+        <Button>This month</Button>
+        <div style={{ justifySelf: "flex-end" }}>
+          <Button>
+            <img src={CalendarIcon} alt=""/>
+            Select Dates
+          </Button>
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height="100%">
+        <AreaChart data={data}>
+          <Area
+            type="monotone"
+            dataKey="value"
+            fill="#665FEF33"
+            stroke="none"
+          />
+          <XAxis
+            xAxisId={0}
+            interval={0}
+            tick={{ fontSize: 21, fontWeight: 500 }}
+            dataKey="value"
+            axisLine={false}
+            tickLine={false}
+          />
+          <XAxis
+            xAxisId={1}
+            interval={0}
+            tick={{ fontSize: 12, fontWeight: 500 }}
+            dataKey="name"
+            axisLine={false}
+            tickLine={false}
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 

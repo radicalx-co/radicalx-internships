@@ -2,7 +2,10 @@ import React from "react";
 import Graph from "../components/Graph";
 import Sidebar from "../components/Sidebar";
 import TextContainer from "../components/TextContainer";
+import Button from "../components/Button";
 import "../styles/dashboard.css";
+import AddIcon from "../assets/add-square.png";
+
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
@@ -11,7 +14,11 @@ const Dashboard = () => {
         {/* Here is internships insights */}
         <div className="title-container">
           <h2>Internships</h2>
-          <button className="purple-btn">Create New Internships</button>
+          <Button bgColor="#793ef5" textColor="white">
+            <img src={AddIcon} alt="" />
+            Create New Internships
+          </Button>
+          {/* <button className="purple-btn">Create New Internships</button> */}
         </div>
         <div className="insights-container">
           <TextContainer
@@ -20,6 +27,7 @@ const Dashboard = () => {
           />
           <Graph />
         </div>
+        
       </div>
     </div>
   );
