@@ -4,3 +4,35 @@
   height: 100vh;
   background-color: var(--bg-light-purple);
 }
+
+.title-container {
+  display: flex;
+  margin: 1em 2em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.purple-btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border: none;
+  border-radius: 1.2em;
+  padding: 1em 2em;
+}
+
+.insights-container {
+  background-color: white !important;
+  padding: 1em;
+  margin: 1em 2em;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  border-radius: 0.7em;
+}
+
+.text-container {
+  background-color: var(--bg-grey);
+  padding: 1em 2em;
+  font-size: 0.9rem;
+  padding-bottom: 4em;
+  border-radius: 0.8em;
+}
