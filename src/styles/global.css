@@ -1,0 +1,28 @@
+/* import css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Space+Grotesk:wght@400;700&display=swap");
+
+/* Universal css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styling */
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Colours */
+:root {
+  --color-purple: #793ef5;
+  --bg-light-purple: #f1f4f8;
+  --bg-purple-faded: rgba(102, 95, 239, 0.2);
+  --color-white: white;
+  --bg-grey: #f6f5f9;
+}
+/*  */
+
+/* body{
+    background-color: var();
+} */
