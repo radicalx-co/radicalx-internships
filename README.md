@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Today we focuse don the internship table 
+## (see image below)
+
+<img src="src/screenshot/int_table.png" alt="Internship Table" title="Internship Table">
+
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
