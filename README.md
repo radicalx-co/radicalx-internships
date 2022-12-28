@@ -1,4 +1,4 @@
-# Today we focuse don the internship table 
+# Today we focused on the internship table 
 ## (see image below)
 
 <img src="src/screenshot/int_table.png" alt="Internship Table" title="Internship Table">
