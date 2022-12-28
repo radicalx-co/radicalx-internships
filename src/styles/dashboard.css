@@ -7,7 +7,7 @@
 
 .title-container {
   display: flex;
-  margin: 1em 2em;
+  margin: 3.5em 2em 1em 2em;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -31,4 +31,9 @@
   font-size: 0.9rem;
   padding-bottom: 4em;
   border-radius: 0.8em;
+}
+
+
+.efVKOz{
+  border-radius: 12px !important;
 }

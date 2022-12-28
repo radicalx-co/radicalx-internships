@@ -3,10 +3,13 @@ import {
   AreaChart,
   Area,
   XAxis,
+  Tooltip,
+  CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
 import Button from "./Button";
 import CalendarIcon from "../assets/calendar-2.png";
+import "../styles/graph.css"
 const Graph = () => {
   // Graph data
   const data = [
@@ -27,20 +30,22 @@ const Graph = () => {
           flexDirection: "row",
           width: "100%",
           alignItems: "center",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
           backgroundColor: "#F2F2F2",
           padding: ".5em",
-          borderRadius: ".5em",
+          borderRadius: "12px",
           margin: "0 .5em",
         }}
       >
-        <Button bgColor={"#793EF5"} textColor="white">
-          This week
-        </Button>
-        <Button>This month</Button>
-        <div style={{ justifySelf: "flex-end" }}>
+        <div className="week_month">
+          <Button bgColor={"#793EF5"} textColor="white">
+            This week
+          </Button>
+          <Button>This month</Button>
+        </div>
+        <div>
           <Button>
-            <img src={CalendarIcon} alt=""/>
+            <img src={CalendarIcon} alt="" />
             Select Dates
           </Button>
         </div>
@@ -53,6 +58,7 @@ const Graph = () => {
             fill="#665FEF33"
             stroke="none"
           />
+          <CartesianGrid strokeDasharray="" horizontal="" vertical="true"/>
           <XAxis
             xAxisId={0}
             interval={0}
@@ -69,6 +75,7 @@ const Graph = () => {
             axisLine={false}
             tickLine={false}
           />
+          <Tooltip />
         </AreaChart>
       </ResponsiveContainer>
     </div>

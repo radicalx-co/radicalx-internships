@@ -10,7 +10,7 @@ const CustomButton = styled.button`
   border: none;
   padding: .7em 2em;
   margin-right:.5em;
-  border-radius: 1.2em;
+  border-radius:8px;
   display: flex;
   align-items: center;
   & > * {
