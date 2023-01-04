@@ -78,3 +78,13 @@ p {
   border-radius: 8px;
   padding: .7em 1.1em;
 }
+
+.row_image{
+  width:200px;
+  height:auto;
+}
+
+.icon-sets{
+  align-items: center;
+  justify-content: space-evenly;
+}

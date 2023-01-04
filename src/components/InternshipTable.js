@@ -2,11 +2,14 @@ import React from 'react'
 import "../styles/InternshipTable.css"
 
 import downArrow from "../assets/down_arrow_icon.png";
+import rowImage from "../assets/Row.png";
+import chartIcon from "../assets/chart_icon.png";
+import userIcon from "../assets/users_icon.png";
+import moreIcon from "../assets/more_dots_icon.png";
 
 
 function InternshipTable() {
   return (
-
     <div className="grid-container">
       <div className="grid-item top-left title">
         Internship Title{" "}
@@ -48,8 +51,14 @@ function InternshipTable() {
       <div className="grid-item">
         <span className="purple_btn">20,000</span>
       </div>
-      <div className="grid-item">9</div>
-      <div className="grid-item">10</div>
+      <div className="grid-item">
+        <img className="row_image" src={rowImage} alt="row_image" />
+      </div>
+      <div className="grid-item icon-sets">
+        <img src={chartIcon} alt="" />
+        <img src={userIcon} alt="" />
+        <img src={moreIcon} alt="" />
+      </div>
       {/* row 3 */}
       <div className="grid-item product">
         Product Design GVI{" "}
@@ -63,8 +72,14 @@ function InternshipTable() {
       <div className="grid-item">
         <span className="purple_btn">20,000</span>
       </div>
-      <div className="grid-item">14</div>
-      <div className="grid-item">15</div>
+      <div className="grid-item">
+        <img className="row_image" src={rowImage} alt="row_image" />
+      </div>
+      <div className="grid-item icon-sets">
+        <img src={chartIcon} alt="" />
+        <img src={userIcon} alt="" />
+        <img src={moreIcon} alt="" />
+      </div>
       {/* row 4 */}
       <div className="grid-item product">
         Product Design GVI{" "}
@@ -78,8 +93,14 @@ function InternshipTable() {
       <div className="grid-item">
         <span className="purple_btn">20,000</span>
       </div>
-      <div className="grid-item">19</div>
-      <div className="grid-item">20</div>
+      <div className="grid-item">
+        <img className="row_image" src={rowImage} alt="row_image" />
+      </div>
+      <div className="grid-item icon-sets">
+        <img src={chartIcon} alt="" />
+        <img src={userIcon} alt="" />
+        <img src={moreIcon} alt="" />
+      </div>
       {/* row 5 */}
       <div className="grid-item product">
         Product Design GVI{" "}
@@ -93,8 +114,14 @@ function InternshipTable() {
       <div className="grid-item">
         <span className="purple_btn">20,000</span>
       </div>
-      <div className="grid-item">24</div>
-      <div className="grid-item">25</div>
+      <div className="grid-item">
+        <img className="row_image" src={rowImage} alt="row_image" />
+      </div>
+      <div className="grid-item icon-sets">
+        <img src={chartIcon} alt="" />
+        <img src={userIcon} alt="" />
+        <img src={moreIcon} alt="" />
+      </div>
       {/* row 6 */}
       <div className="grid-item bottom-left product">
         Product Design GVI{" "}
@@ -108,8 +135,14 @@ function InternshipTable() {
       <div className="grid-item">
         <span className="purple_btn">20,000</span>
       </div>
-      <div className="grid-item">29</div>
-      <div className="grid-item bottom-right">30</div>
+      <div className="grid-item">
+        <img className="row_image" src={rowImage} alt="row_image" />
+      </div>
+      <div className="grid-item bottom-right icon-sets">
+        <img src={chartIcon} alt="" />
+        <img src={userIcon} alt="" />
+        <img src={moreIcon} alt="" />
+      </div>
     </div>
   );
 }
